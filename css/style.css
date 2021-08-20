@@ -1,0 +1,257 @@
+/*---------------------------*/
+/*---- TABLES DES STYLES ----*/
+/*---------------------------*/
+/*--- CONTENUS GENERIQUES ---*/
+/*---------------------------*/
+/*----------- BODY ----------*/
+/*---------- HEADER ---------*/
+/*---------- NAVBAR ---------*/
+/*----------- MAIN ----------*/
+/*---------- ARTICLE --------*/
+/*---------- FOOTER ---------*/
+/*---------------------------*/
+
+* {
+    margin : 0; 
+    padding : 0;
+}
+
+/*----------- BODY ----------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
+}
+
+/*---------- HEADER ---------*/
+
+header {
+    background-color: #061622;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*--- CONTENUS GENERIQUES ---*/
+
+h1 {
+    color: #FFFFFF;
+    font-size: 55px;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/*---------- NAVBAR ---------*/
+
+nav {
+    margin-top: 10px;
+    color: #F6F6F6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/*--- CONTENUS GENERIQUES ---*/
+
+ul {
+    max-width: 1150px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    width: 25%;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+}
+
+li:first-of-type::before {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px; right: 190px;
+    content: "";
+    background-image: url(../src/icons/facebook.png);
+    background-size: contain;
+    filter: invert(1);
+}
+
+
+li:nth-of-type(2)::before {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px; right: 190px;
+    content: "";
+    background-image: url(../src/icons/youtube.png);
+    background-size: contain;
+    filter: invert(1);
+}          
+
+li:nth-of-type(3)::before {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px; right: 190px;
+    content: "";
+    background-image: url(../src/icons/twitter.png);
+    background-size: contain;
+    filter: invert(1);
+}           
+
+li:last-of-type::before {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px; right: 190px;
+    content: "";
+    background-image: url(../src/icons/instagram.png);
+    background-size: contain;
+    filter: invert(1);
+}
+
+
+li a {
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li:first-of-type a {
+    background-color: #0E1F56;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+li:nth-of-type(2) a {background-color: #E52D27;}
+
+li:nth-of-type(3) a {background-color: #55ACEE;}
+
+li:last-of-type a {
+    background-color: #C13584;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li a:hover {background-color: #B318FF;}
+
+/*----------- MAIN ----------*/
+
+main {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+main .intro {margin-top: 20px;}
+
+/*--- CONTENUS GENERIQUES ---*/
+
+h2 {
+    margin: 0 auto;
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    width: 5px;
+    background-color: #0E1F56;
+    position: absolute;
+    top: 0; bottom: 0; left: -30px;
+}
+
+h2::after {
+    content: "";
+    width: 5px;
+    background-color: #0E1F56;
+    position: absolute;
+    top: 0; bottom: 0; right: -30px;
+}
+
+img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/*---------- ARTICLE --------*/
+
+main article {margin-top: 40px;}
+
+article {position: relative;}
+
+article::before {
+    content: "";
+    width: 3px;
+    background-color: #0E1F56;
+    position: absolute;
+    top: 60px; bottom: 0; left: 0px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/*--- CONTENUS GENERIQUES ---*/
+
+article p {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.reseau {font-weight: bolder;}
+
+a {
+    color: #3C93F7;
+    text-decoration: none;
+}
+
+article a[href="https://"] {color: #0E1F56;}
+
+main a[href="#"] {font-weight: bolder;}
+
+a:hover {text-decoration: underline;}
+
+article:first-of-type .reseau {color: #0E1F56;}
+
+article:nth-of-type(2) .reseau {color: #E52D27;}
+
+article:nth-of-type(3) .reseau {color: #55ACEE;}
+
+article:last-of-type .reseau {color: #C13584;}
+
+/*---------- FOOTER ---------*/
+
+footer {
+    max-width: 100%;
+    background-color: #061622;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*--- CONTENUS GENERIQUES ---*/
+
+footer p, footer p a {color: #FFFFFF;}
+
+
+
+
+
